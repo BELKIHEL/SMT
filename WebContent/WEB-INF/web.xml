@@ -17,7 +17,22 @@
     <servlet-name>RequestServelet</servlet-name>
     <url-pattern>/Request</url-pattern>
 </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchServelet</servlet-name>
+    <servlet-class>com.SMT.SearchServelet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchServelet</servlet-name>
+    <url-pattern>/Search</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>ConséquenceServelet</servlet-name>
+    <servlet-class>com.SMT.ConséquenceServelet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ConséquenceServelet</servlet-name>
+    <url-pattern>/Consequence</url-pattern>
+</servlet-mapping>
 
-  
-   
+ 
 </web-app>

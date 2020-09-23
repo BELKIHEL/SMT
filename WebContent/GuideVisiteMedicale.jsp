@@ -89,9 +89,7 @@
 								</a>
                            
                         </li>
-                        <li>
-                            <a title="Landing Page" href="<%= request.getContextPath() %>/index.jsp" aria-expanded="false"><span class="educate-icon educate-search icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Nouvelle Recherche</span></a>
-                        </li>
+                       
                         <li>
                             <a  href="<%= request.getContextPath() %>/Aide.jsp" aria-expanded="false"><span class="fa fa-info-circle edu-informatio"></span> <span style="margin-left:7px;" class="mini-click-non">Aide</span></a>
                             
@@ -190,6 +188,7 @@
                             <div class="breadcome-list">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                      <h3 style="margin-left:30px;font-family:Serif;margin-bottom:40px;">Guide de visite médicale:</h3>
                                         <div class="breadcome-heading">
                                             <form>
   <div style=" margin-left:40px; "class="form-group row">
@@ -268,7 +267,7 @@
 
 
      <div class="container">
-       <div style="float: left;margin-right:10px">
+       <div style="float: left;margin-right:10px;">
 
 
   <table style="width: 400px;margin-top:30px;  " class="table table-bordered table-striped">
@@ -281,25 +280,10 @@
     </thead>
     <tbody id="myTable">
       <tr>
-        <td>John</td>
-        <td>Doe</td>
+        <td></td>
+        <td></td>
        
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-      
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-  
-      </tr>
-      <tr>
-        <td>Anja</td>
-        <td>Ravendale</td>
-
-      </tr>
+     
     </tbody>
   </table>
   </div>
@@ -316,25 +300,11 @@
     </thead>
     <tbody id="myTable">
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@mail.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@greatstuff.com</td>
-      </tr>
-      <tr>
-        <td>Anja</td>
-        <td>Ravendale</td>
-        <td>a_r@test.com</td>
-      </tr>
+      
     </tbody>
   </table>
   </div>

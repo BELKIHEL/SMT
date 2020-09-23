@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="com.SMT.Conséquences" %>
+    <%@ page import="java.util.*" %>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -89,9 +91,7 @@
 								</a>
                            
                         </li>
-                        <li>
-                            <a title="Landing Page" href="<%= request.getContextPath() %>/index.jsp" aria-expanded="false"><span class="educate-icon educate-search icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Nouvelle Recherche</span></a>
-                        </li>
+                        
                         <li>
                             <a  href="<%= request.getContextPath() %>/Aide.jsp" aria-expanded="false"><span class="fa fa-info-circle edu-informatio"></span> <span style="margin-left:7px;" class="mini-click-non">Aide</span></a>
                             
@@ -180,154 +180,52 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu start -->
-            <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>index.jsp">
-
- v.1</a></li>
-                                                <li><a href="<%= request.getContextPath() %>/template/index-1.html">Dashboard v.2</a></li>
-                                                <li><a href="<%= request.getContextPath() %>/template/index-3.html">Dashboard v.3</a></li>
-                                                <li><a href="<%= request.getContextPath() %>/template/analytics.html">Analytics</a></li>
-                                                <li><a href="<%= request.getContextPath() %>/template/widgets.html">Widgets</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="<%= request.getContextPath() %>/template/events.html">Event</a></li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="<%= request.getContextPath() %>/template/#">Professors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/all-professors.html">All Professors</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/add-professor.html">Add Professor</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/edit-professor.html">Edit Professor</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/professor-profile.html">Professor Profile</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                     
-                                        <li><a data-toggle="collapse" data-target="#democrou" href="#">Courses <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="democrou" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/all-courses.html">All Courses</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/add-course.html">Add Course</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/edit-course.html">Edit Course</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/course-profile.html">Courses Info</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/course-payment.html">Courses Payment</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demolibra" href="#">Library <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demolibra" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/library-assets.html">Library Assets</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/add-library-assets.html">Add Library Asset</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/edit-library-assets.html">Edit Library Asset</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demodepart" href="#">Departments <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demodepart" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/departments.html">Departments List</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/add-department.html">Add Departments</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/edit-department.html">Edit Departments</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demo" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/mailbox.html">Inbox</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/mailbox-view.html">View Mail</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/mailbox-compose.html">Compose Mail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Miscellaneousmob" href="#">Interface <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/google-map.html">Google Map</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/data-maps.html">Data Maps</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/pdf-viewer.html">Pdf Viewer</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/x-editable.html">X-Editable</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/code-editor.html">Code Editor</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/tree-view.html">Tree View</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/preloader.html">Preloader</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/images-cropper.html">Images Cropper</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Chartsmob" href="#">Charts <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Chartsmob" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/bar-charts.html">Bar Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/line-charts.html">Line Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/area-charts.html">Area Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/rounded-chart.html">Rounded Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/c3.html">C3 Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/sparkline.html">Sparkline Charts</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/peity.html">Peity Charts</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Tablesmob" href="#">Tables <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Tablesmob" class="collapse dropdown-header-top">
-                                                <li><a href="<%= request.getContextPath() %>/template/static-table.html">Static Table</a>
-                                                </li>
-                                                <li><a href="<%= request.getContextPath() %>/template/data-table.html">Data Table</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                               
-                                    
-                                    
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile Menu end -->
+         
             <div class="breadcome-area">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="breadcome-list">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Search..." class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
+                                    <div  style="margin-bottom:100px;"  class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    
+                                    <h3 style="margin-left:30px;margin-bottom:40px;font-family:Serif;;margin-bottom:40px;">Conséquences Possibles:</h3>
+                                        <div  class="breadcome-heading">
+                                             <form  action="Consequence" method="POST"  role="search" class="sr-input-func">
+                                                <input  style="width: 400px; height: 50px;float:left; " type="text" name="recherche" placeholder="Chercher un accident..." class="search-int form-control">
+                                               	<input style="float:left;margin-left:15px;margin-top:15px;" type="submit" class="btn btn-primary waves-effect waves-light" value="Chercher" width="60">
+                   
                                             </form>
                                         </div>
                                     </div>
+                                    
+
+                                    
+                                    
+                                    
+                                    
+                 
+                                    
+                                    
+                                     <table  class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Accidnet</th>
+        <th>Cause</th>
+        <th>Conséquences</th>
+      </tr>
+    </thead>
+     
+    <tbody id="myTable">
+      <tr>
+        <td>    </td>
+        <td>  </td>
+        <td>   </td>
+     
+    </tbody>
+    
+
+  </table>
                                   
                                 </div>
                             </div>
@@ -337,40 +235,9 @@
             </div>
         </div>
      <div class="container">
-  <input class="form-control mb-4" id="tableSearch" type="text"
-    placeholder="Type something to search list items">
+ 
 
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody id="myTable">
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@mail.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@greatstuff.com</td>
-      </tr>
-      <tr>
-        <td>Anja</td>
-        <td>Ravendale</td>
-        <td>a_r@test.com</td>
-      </tr>
-    </tbody>
-  </table>
+  
 </div>
       
       

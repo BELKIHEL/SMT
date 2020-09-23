@@ -90,9 +90,7 @@
 								</a>
                            
                         </li>
-                        <li>
-                            <a title="Landing Page" href="<%= request.getContextPath() %>/index.jsp" aria-expanded="false"><span class="educate-icon educate-search icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Nouvelle Recherche</span></a>
-                        </li>
+                       
                         <li>
                             <a  href="<%= request.getContextPath() %>/Aide.jsp" aria-expanded="false"><span class="fa fa-info-circle edu-informatio"></span> <span style="margin-left:7px;" class="mini-click-non">Aide</span></a>
                             
@@ -190,15 +188,29 @@
                                 <div class="row">
                                
                                     <div style="padding:5px;"class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <p><B><i><FONT size="4pt">Le concept de recherche:</FONT></i></B></p>
+                                    <h3 style=font-family:Serif;margin-left:15px; >Recherche manuelle:</h3>
                                         <div class="breadcome-heading">
                                          
-                                            <form role="search" class="sr-input-func">
-                                                <input  style="width: 400px; height: 50px;float:left; " type="text" placeholder="Search..." class="search-int form-control">
-                                           
+                                            <form action="Search" method="POST"  role="search" class="sr-input-func">
+                                                <input  style="width: 400px; height: 50px;float:left; " type="text" name="recherche" placeholder="Chercher..." class="search-int form-control">
+                                               	<input style="float:left;margin-left:15px;margin-top:15px;" type="submit" class="btn btn-custon-two btn-warning" value="Chercher" width="60">
+                   
                                             </form>
-                                                      <button style="float:left;margin-left:15px;margin-top:7px;"type="button" class="btn btn-custon-two btn-warning">Chercher</button>
+                                   
+                                                    
                                         </div>
+             	      <br> <br>	      <br> <br> 	      <br> <br>
+			      <b ><B>
+                                         <%
+                                      
+                                            
+                                            String msg =(String)request.getAttribute("message");
+                                         if(msg !=null){
+                                            out.print(msg);
+                                         }
+                                            %>
+                                           </B>   </b>
+          
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
@@ -232,13 +244,9 @@
                            
                             <div style="margin-left: 50px;"class="social-edu-ctn">
                                 <h3 style="text-align: center;">Agent</h3>
-                                <p  style="text-align: center;"> <%
-                                
-                                
-                                String message = (String) request.getAttribute("meriem");
-                                out.print(message);
-                                
-                                %> </p>
+                                <p  style="text-align: center;"> 
+                           50
+                               </p>
                                 
                             </div>
                         </div> 
@@ -257,13 +265,7 @@
                             
                             <div style="margin-left: 50px;" class="social-edu-ctn">
                                 <h3 style="text-align: center;">Unité</h3>
-                                <p style="text-align: center;"><%
-                                
-                                
-                                String unite= (String) request.getAttribute("unite");
-                                out.print(unite);
-                                
-                                %></p>
+                                <p style="text-align: center;">50</p>
                             </div>
                         </div>
                     </div>

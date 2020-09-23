@@ -13,7 +13,7 @@ public class SMTRequest {
 	
        //Query the collection, dump output
        QueryExecution qe = QueryExecutionFactory.sparqlService(
-               "http://localhost:3030/smtbdd/query", "SELECT (COUNT(?s) AS ?agent) WHERE {?s ?x ?y}");
+               "http://localhost:3030/smtbdd/query", "SELECT (COUNT(?s) AS ?agent) WHERE {?s ?x ?y  FILTER regex(?y, \"mari\") .}");
        ResultSet results = qe.execSelect();
  
       
